@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+body{
+    background-color: rgb(57, 57, 93);
+}
+.container
+{
+    background-color:white;
+}
+#form
+{   margin: 150px auto;
+     padding: 10px 10px;
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+
+}
+.form h1{
+    text-align: center;
+}
+
+.form-control
+{
+ 
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+.form-control .error{
+    color: red;
+    margin: 5px 5px;
+}
+
+
+/* This way, the rule targets input elements that are direct children of an element with both the classes .form-control and .error (or .success) */
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success input
+{
+    border-color: green;
+ }
